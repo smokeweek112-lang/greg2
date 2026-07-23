@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   _ngcontent-wdm-c15=""
+   viewBox="0 0 86.23688 514.20987"
+   class="ng-star-inserted"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="4_.svg"
+   width="86.236877"
+   height="514.20984"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs5" />
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.39777832"
+     inkscape:cx="-140.78193"
+     inkscape:cy="524.16129"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <title
+     _ngcontent-wdm-c15=""
+     translate=""
+     id="title1">Wähle eine Körperstelle *</title>
+  <g
+     _ngcontent-wdm-c15=""
+     id="right_view"
+     transform="translate(-605.9882,-0.59017978)">
+    <g
+       _ngcontent-wdm-c15=""
+       id="leg_right">
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls calf_right"
+         d="m 949.8,604.2 c -9.1,74.9 -15.6,113.2 -12.8,126 0.3,1.7 0.6,3.4 2,4.3 7.1,7.7 29.2,16.4 40.6,20.6 a 2.1,2.1 0 0 1 1,0.8 2.2,2.2 0 0 1 -2,3.2 l -70,-1 c -4.7,-0.3 -9.5,-6.2 -7.3,-10.4 27.8,-42.8 -6.2,-86.6 10.3,-140.8 a 6.3,6.3 0 0 1 5.4,-4.5 110.7,110.7 0 0 1 32.8,1.8"
+         id="calf_right"
+         transform="translate(-294.4,-245)" />
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls foot_right"
+         d="m 937.2,731.2 -27.9,0.2 c -1.7,5.5 -4.3,9.7 -8,15.6 a 8.9,8.9 0 0 0 -0.5,6.6 c 1.1,3 4.8,4.9 8.7,5.3 l 69.3,0.9 c 3.1,0 3.4,-4 1.9,-4.7 a 257.6,257.6 0 0 1 -34.5,-15.2 c -4.6,-3 -8.3,-5.2 -9,-8.7 z"
+         id="foot_right"
+         transform="translate(-294.4,-245)" />
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls thigh_right"
+         d="m 979.4,480.6 c -4.9,38.9 -15.7,80.5 -29.6,123.6 a 89.7,89.7 0 0 0 -36.9,-1.3 c 3.7,-36.8 5.8,-71.5 3.9,-101.1 5.7,-17.8 38.3,-25.3 62.6,-21.2 z"
+         id="thigh_right"
+         transform="translate(-294.4,-245)" />
+    </g>
+    <g
+       _ngcontent-wdm-c15=""
+       id="torso">
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls buttocks_right"
+         d="m 940,446.7 -16.9,-0.2 c -10.9,7.6 -27.5,38.5 -6.3,55.3 7.4,-11.7 11.6,-16.6 28.5,-18.4 -3.2,-11 -4.5,-24.1 -5.3,-36.7 z"
+         id="buttocks_right"
+         transform="translate(-294.4,-245)" />
+      <g
+         _ngcontent-wdm-c15=""
+         id="hip">
+        <path
+           _ngcontent-wdm-c15=""
+           class="cls hip_right"
+           d="m 973.6,446.6 h -33.7 c -0.4,0.2 2.2,26 5.4,36.7 11.5,-2.6 22,-4.1 25.9,-3.6 1.3,-12.9 1.9,-25.6 2.4,-33.1 z"
+           id="hip_right"
+           transform="translate(-294.4,-245)" />
+        <path
+           _ngcontent-wdm-c15=""
+           class="cls groin"
+           d="m 982.8,446.7 c 0.2,10.6 -0.2,21.7 -3.4,33.9 a 36.2,36.2 0 0 0 -8.2,-0.8 l 3.1,-33.2 z"
+           id="groin"
+           transform="translate(-294.4,-245)" />
+      </g>
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls back_center"
+         d="m 916.8,328.5 c -5.6,5.8 -9.6,25.9 -11.3,36.1 a 28.1,28.1 0 0 0 0.5,11.9 l 17.1,70 16.9,0.2 c 0,0 -7,-94.8 -4.7,-111.2 -8.7,-2 -15.6,-4.3 -18.5,-7 z"
+         id="back_center"
+         transform="translate(-294.4,-245)" />
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls side_right"
+         d="m 975.8,391.7 c -0.1,6.4 -0.2,43.2 -1.5,54.9 h -34.4 c -2.8,-28.8 -3.4,-58.7 -3.4,-58.7 0,0 33.8,3.8 38.9,3.3 a 0.4,0.4 0 0 1 0.4,0.5 z"
+         id="side_right"
+         transform="translate(-294.4,-245)" />
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls underboob"
+         d="m 975.8,391.4 c 0.2,-0.1 6,0.1 9,-1 v 0 c -5.3,48.2 -1.2,50.3 -2.2,56.3 h -8.3 c 0.4,-9 1.3,-55.3 1.5,-55.3 z"
+         id="underboob"
+         transform="translate(-294.4,-245)" />
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls chest_right"
+         d="m 950.9,336.6 c 22.1,18 23,18.9 31.6,29.5 2.9,3.7 5.6,20.1 3.2,24.2 -7,2.5 -10,1.6 -10,1.6 l -39.3,-3.4 -1.2,-52.4 z"
+         id="chest_right"
+         transform="translate(-294.4,-245)" />
+      <g
+         _ngcontent-wdm-c15=""
+         id="arm_right">
+        <path
+           _ngcontent-wdm-c15=""
+           class="cls hand_right"
+           d="m 967.6,532.1 a 5.8,5.8 0 0 1 -6.7,5.5 c -3.4,-0.5 -6.4,-1.5 -7.9,-3.2 -1.5,-1.7 -9,-22 -9.2,-32.8 a 5.4,5.4 0 0 1 2.8,-4.8 20.8,20.8 0 0 1 7.7,-2.4 5.8,5.8 0 0 1 5.9,3.5 c 3.9,9.1 12.8,20.7 11.9,25.2 -0.9,4.5 -9.1,-5.1 -12,-7.3 -0.3,-0.1 -0.6,0.2 -0.4,0.4 2,2.4 8.1,9.9 7.9,15.9 z"
+           id="hand_right"
+           transform="translate(-294.4,-245)" />
+        <path
+           _ngcontent-wdm-c15=""
+           class="cls forearm_right"
+           d="m 944.6,425.1 c 2,23.8 8.7,51 14.1,69.7 -4.6,-0.7 -11.7,1.1 -15.6,4.6 -7.6,-16.9 -13.9,-40 -19.3,-59.5 6.5,-9.3 13.4,-14.9 20.8,-14.8 z"
+           id="forearm_right"
+           transform="translate(-294.4,-245)" />
+        <path
+           _ngcontent-wdm-c15=""
+           class="cls upper_arm_right"
+           d="m 936.5,335.4 c -28.1,-1.5 -15.8,56.8 -12.7,104.5 6.2,-8.5 12.9,-14.9 20.8,-14.8 a 285.2,285.2 0 0 1 1.7,-37.2 C 941,370.2 963,345.1 936.5,335.4 Z"
+           id="upper_arm_right"
+           transform="translate(-294.4,-245)" />
+      </g>
+    </g>
+    <g
+       _ngcontent-wdm-c15=""
+       id="head">
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls neck_right"
+         d="m 944.8,285.2 c 0,0 1.4,10.7 1.8,11.5 0.4,0.8 16.1,9.4 16.1,9.4 -7.1,3.2 -11.7,18 -11.7,29.9 0,0 -11.8,-0.6 -15.5,-1.2 -3.7,-0.6 -19.2,-5.5 -18.7,-6.3 4.4,-10.6 8.3,-20.8 9.2,-28.9 4.2,-7 13.7,-14.2 18.8,-14.4 z"
+         id="neck_right"
+         transform="translate(-294.4,-245)" />
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls head_right"
+         d="m 950.6,246 c -41.2,-4.9 -42.4,35.4 -24.6,53.6 6.2,-8.3 12,-13.6 18.8,-14.9 -1,-15.1 -1.7,-29.9 5.8,-38.7 z"
+         id="head_right"
+         transform="translate(-294.4,-245)" />
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls face_right"
+         d="m 951.1,246.3 c 13.5,1 28.5,4.8 31,25.7 3.7,32.6 -7.4,47.4 -35.7,23.9 -3.1,-21.8 -4.1,-41.2 4.7,-49.6 z"
+         id="face_right"
+         transform="translate(-294.4,-245)" />
+    </g>
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Wähle eine Körperstelle *</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

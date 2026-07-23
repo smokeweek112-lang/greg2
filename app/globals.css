@@ -1,0 +1,555 @@
+/* ===================================
+   TAILWIND IMPORTS
+   =================================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===================================
+   FONT FACES
+   =================================== */
+
+/* Helvetica Neue Cyr - Regular Weights */
+@font-face {
+  font-family: "Helvetica Neue Cyr";
+  src: url("/fonts/HelveticaNeueCyr-UltraLight.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue Cyr";
+  src: url("/fonts/HelveticaNeueCyr-Thin.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue Cyr";
+  src: url("/fonts/HelveticaNeueCyr-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue Cyr";
+  src: url("/fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue Cyr";
+  src: url("/fonts/HelveticaNeueCyr-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue Cyr";
+  src: url("/fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue Cyr";
+  src: url("/fonts/HelveticaNeueCyr-Heavy.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue Cyr";
+  src: url("/fonts/HelveticaNeueCyr-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Helvetica Neue Cyr - Condensed Weights */
+@font-face {
+  font-family: "Helvetica Neue Cyr Condensed";
+  src: url("/fonts/HelveticaNeueBoldCondensed.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue Cyr Condensed";
+  src: url("/fonts/HelveticaNeueBlackCondensed.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Arsenica Font Family */
+@font-face {
+  font-family: "Arsenica";
+  src: url("/fonts/Arsenica-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arsenica";
+  src: url("/fonts/Arsenica-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arsenica";
+  src: url("/fonts/Arsenica-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arsenica";
+  src: url("/fonts/Arsenica-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arsenica";
+  src: url("/fonts/Arsenica-Demibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arsenica";
+  src: url("/fonts/Arsenica-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arsenica";
+  src: url("/fonts/Arsenica-Extrabold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Ogg Font Family */
+@font-face {
+  font-family: "Ogg";
+  src: url("/fonts/Ogg-Thin.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("/fonts/Ogg-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Didot Font Family */
+@font-face {
+  font-family: "Didot";
+  src: url("/fonts/Didot-Thin.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Didot";
+  src: url("/fonts/Didot-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===================================
+   UTILITY CLASSES - FONT FAMILIES
+   =================================== */
+
+/* Helvetica Neue Cyr Classes */
+.hn-ultra-light {
+  font-family: "Helvetica Neue Cyr", sans-serif;
+  font-weight: 100;
+}
+.hn-thin {
+  font-family: "Helvetica Neue Cyr", sans-serif;
+  font-weight: 200;
+}
+.hn-light {
+  font-family: "Helvetica Neue Cyr", sans-serif;
+  font-weight: 300;
+}
+.hn-regular {
+  font-family: "Helvetica Neue Cyr", sans-serif;
+  font-weight: 400;
+}
+.hn-medium {
+  font-family: "Helvetica Neue Cyr", sans-serif;
+  font-weight: 500;
+}
+.hn-bold {
+  font-family: "Helvetica Neue Cyr", sans-serif;
+  font-weight: 700;
+}
+.hn-heavy {
+  font-family: "Helvetica Neue Cyr", sans-serif;
+  font-weight: 800;
+}
+.hn-black {
+  font-family: "Helvetica Neue Cyr", sans-serif;
+  font-weight: 900;
+}
+
+/* Helvetica Neue Cyr Condensed Classes */
+.hn-condensed-bold {
+  font-family: "Helvetica Neue Cyr Condensed", sans-serif;
+  font-weight: 700;
+}
+.hn-condensed-black {
+  font-family: "Helvetica Neue Cyr Condensed", sans-serif;
+  font-weight: 900;
+}
+
+/* Arsenica Classes */
+.ars-thin {
+  font-family: "Arsenica", serif;
+  font-weight: 100;
+}
+.ars-light {
+  font-family: "Arsenica", serif;
+  font-weight: 300;
+}
+.ars-regular {
+  font-family: "Arsenica", serif;
+  font-weight: 400;
+}
+.ars-medium {
+  font-family: "Arsenica", serif;
+  font-weight: 500;
+}
+.ars-demibold {
+  font-family: "Arsenica", serif;
+  font-weight: 600;
+}
+.ars-bold {
+  font-family: "Arsenica", serif;
+  font-weight: 700;
+}
+.ars-extrabold {
+  font-family: "Arsenica", serif;
+  font-weight: 800;
+}
+
+/* Ogg Classes */
+.ogg-thin {
+  font-family: "Ogg", serif;
+  font-weight: 200;
+}
+.ogg-light {
+  font-family: "Ogg", serif;
+  font-weight: 300;
+}
+
+/* Didot Classes */
+.didot-thin {
+  font-family: "Didot", serif;
+  font-weight: 200;
+}
+.didot-bold {
+  font-family: "Didot", serif;
+  font-weight: 700;
+}
+
+/* ===================================
+   GLOBAL STYLES
+   =================================== */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue Cyr", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/* ===================================
+   SCROLLBAR CUSTOMIZATION
+   =================================== */
+
+/* Hide scrollbar for webkit browsers */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Radix (react-remove-scroll) locks scroll on <body>, but because html has
+   overflow-x hidden the page actually scrolls on <html> — lock it too while
+   a dialog is open, otherwise the page keeps scrolling behind the dialog. */
+html:has(body[data-scroll-locked]) {
+  overflow: hidden;
+}
+
+/* ===================================
+   TAILWIND LAYERS
+   =================================== */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ===================================
+   ANIMATIONS & KEYFRAMES
+   =================================== */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 10s linear infinite;
+}
+
+.animate-scroll-infinite {
+  animation: scroll-infinite 10s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* ===================================
+   LOADING SCREENS
+   =================================== */
+
+/* Second Loading Screen - Black background (bottom layer) */
+.second-loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.second-loading-screen.fading {
+  opacity: 0;
+}
+
+/* First Loading Screen - White background (top layer) */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.loading-screen.exiting {
+  transform: translateY(-100vh);
+}
+
+/* Loading Screen Components */
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: transparent;
+}
+
+.progress-fill {
+  height: 100%;
+  background: black;
+  transition: width 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.percentage-text {
+  font-size: 8rem;
+  font-style: italic;
+  font-weight: 200;
+  color: black;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-family: "Ogg", sans-serif;
+}
+
+.percentage-text.visible {
+  opacity: 1;
+}
+
+.key-icon {
+  color: white;
+  width: 120px;
+  height: 120px;
+}
+
+/* ===================================
+   PERFORMANCE OPTIMIZATIONS
+   =================================== */
+
+.parallax-section {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .percentage-text {
+    font-size: 4rem;
+  }
+
+  .key-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Hide custom cursor on mobile/touch devices */
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none !important;
+  }
+}
+
+@media (hover: none) {
+  .custom-cursor {
+    display: none !important;
+  }
+}
+
+@media (pointer: coarse) {
+  .custom-cursor {
+    display: none !important;
+  }
+}
+
+.carousel-container {
+  width: 80%;
+  margin: auto;
+}
+
+.slick-slide img {
+  border-radius: 8px;
+}

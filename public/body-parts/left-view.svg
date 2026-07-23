@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   _ngcontent-wdm-c15=""
+   viewBox="0 0 86.052958 513.51291"
+   class="ng-star-inserted"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="1_.svg"
+   width="86.052956"
+   height="513.51288"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs5" />
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.125087"
+     inkscape:cx="304.86531"
+     inkscape:cy="341.75135"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <title
+     _ngcontent-wdm-c15=""
+     translate=""
+     id="title1">Wähle eine Körperstelle *</title>
+  <g
+     _ngcontent-wdm-c15=""
+     id="left_view"
+     transform="translate(-0.51999099,-1.9901798)">
+    <g
+       _ngcontent-wdm-c15=""
+       data-name="leg_left"
+       id="leg_left-3">
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls calf_left"
+         d="m 331.8,605.6 c 9.2,74.9 15.7,113.2 12.9,126 -0.3,1.7 -0.7,3.4 -2,4.3 -7.1,7.7 -29.3,16.4 -40.6,20.6 a 2.1,2.1 0 0 0 -1,0.8 2.1,2.1 0 0 0 1.9,3.2 l 70.1,-1 c 4.7,-0.3 9.5,-6.2 7.3,-10.4 -27.8,-42.8 6.2,-86.6 -10.3,-140.8 a 6.5,6.5 0 0 0 -5.5,-4.5 110.8,110.8 0 0 0 -32.8,1.8"
+         data-name="calf_left"
+         id="calf_left-3"
+         transform="translate(-294.4,-245)" />
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls foot_left"
+         d="M 344.7,731.6 H 372 a 68.7,68.7 0 0 0 7.9,17.2 6.4,6.4 0 0 1 0.7,5.7 c -1.1,3 -3.7,4.6 -7.5,5 l -69.4,0.9 c -3.1,0.1 -3.4,-3.1 -1.9,-3.9 11.5,-3.9 22.7,-9.5 34.4,-15.6 4.6,-3 7.7,-5.9 8.5,-9.3 z"
+         data-name="foot_left"
+         id="foot_left-3"
+         transform="translate(-294.4,-245)" />
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls thigh_left"
+         d="m 302.3,482 c 4.8,38.9 15.6,80.5 29.5,123.6 a 90.3,90.3 0 0 1 37,-1.3 C 365,567.5 362.9,532.8 364.9,503.2 359.2,485.4 326.5,477.9 302.3,482 Z"
+         data-name="thigh_left"
+         id="thigh_left-3"
+         transform="translate(-294.4,-245)" />
+    </g>
+    <g
+       _ngcontent-wdm-c15=""
+       data-name="torso"
+       id="torso-4">
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls buttocks_left"
+         d="m 341.6,448.1 17,-0.2 c 10.9,7.6 27.5,38.5 6.3,55.3 -7.4,-11.7 -11.6,-16.6 -28.5,-18.4 3.2,-11 4.5,-24.1 5.2,-36.7 z"
+         data-name="buttocks_left"
+         id="buttocks_left-2"
+         transform="translate(-294.4,-245)" />
+      <g
+         _ngcontent-wdm-c15=""
+         data-name="hip"
+         id="hip-3">
+        <path
+           _ngcontent-wdm-c15=""
+           class="cls hip_left"
+           d="m 308.1,448 h 33.7 c 0.3,0.2 -2.2,26 -5.4,36.7 -11.5,-2.6 -22,-4.1 -25.9,-3.6 -1.3,-12.9 -1.9,-25.6 -2.4,-33.1 z"
+           data-name="hip_left"
+           id="hip_left-2"
+           transform="translate(-294.4,-245)" />
+        <path
+           _ngcontent-wdm-c15=""
+           class="cls groin"
+           d="m 298.9,448.1 c -0.2,10.6 0.1,21.7 3.4,33.9 a 36.2,36.2 0 0 1 8.2,-0.8 L 307.4,448 Z"
+           data-name="groin"
+           id="groin-3"
+           transform="translate(-294.4,-245)" />
+      </g>
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls side_left"
+         d="m 305.9,393.1 c 0,6.4 0.2,43.2 1.5,54.9 h 34.4 c 2.7,-28.8 3.4,-58.7 3.4,-58.7 0,0 -33.8,3.8 -38.9,3.3 a 0.4,0.4 0 0 0 -0.4,0.5 z"
+         data-name="side_left"
+         id="side_left-3"
+         transform="translate(-294.4,-245)" />
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls back_center"
+         d="m 364.9,329.9 c 5.6,5.8 9.5,25.9 11.3,36.1 a 29.8,29.8 0 0 1 -0.5,11.9 l -17.1,70 -17,0.2 c 0,0 7,-94.8 4.8,-111.2 8.6,-2 15.5,-4.3 18.5,-7 z"
+         data-name="back_center"
+         id="back_center-3"
+         transform="translate(-294.4,-245)" />
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls underboob"
+         d="m 305.9,392.8 c -0.2,-0.1 -6.1,0.1 -9.1,-1 v 0 c 5.4,48.2 1.3,50.3 2.2,56.3 h 8.4 c -0.4,-9 -1.3,-55.3 -1.5,-55.3 z"
+         data-name="underboob"
+         id="underboob-3"
+         transform="translate(-294.4,-245)" />
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls chest_left"
+         d="m 330.7,337.4 c -22.2,18 -23,19 -31.6,29.6 -3,3.7 -5.6,20.1 -3.3,24.2 7,2.5 10.1,1.6 10.1,1.6 l 39.3,-3.4 1.2,-52.5 z"
+         data-name="chest_left"
+         id="chest_left-2"
+         transform="translate(-294.4,-245)" />
+      <g
+         _ngcontent-wdm-c15=""
+         data-name="arm_left"
+         id="arm_left-3">
+        <path
+           _ngcontent-wdm-c15=""
+           class="cls hand_left"
+           d="m 314,533.5 a 5.9,5.9 0 0 0 6.7,5.5 c 3.5,-0.5 6.5,-1.5 8,-3.2 1.5,-1.7 8.9,-22 9.2,-32.8 a 5.6,5.6 0 0 0 -2.8,-4.8 20.8,20.8 0 0 0 -7.7,-2.4 5.7,5.7 0 0 0 -5.9,3.5 c -4,9.1 -12.9,20.7 -11.9,25.2 1,4.5 9.1,-5.1 12,-7.3 0.2,-0.1 0.5,0.2 0.3,0.4 -2,2.4 -8,9.9 -7.9,15.9 z"
+           data-name="hand_left"
+           id="hand_left-3"
+           transform="translate(-294.4,-245)" />
+        <path
+           _ngcontent-wdm-c15=""
+           class="cls forearm_left"
+           d="m 337.1,426.5 c -2,23.8 -8.7,51 -14.2,69.7 4.7,-0.7 11.7,1.1 15.7,4.6 7.6,-16.9 13.8,-40 19.3,-59.5 -6.6,-9.3 -13.5,-14.9 -20.8,-14.8 z"
+           data-name="forearm_left"
+           id="forearm_left-2"
+           transform="translate(-294.4,-245)" />
+        <path
+           _ngcontent-wdm-c15=""
+           class="cls upper_arm_left"
+           d="m 345.2,336.8 c 28.1,-1.5 15.7,56.8 12.7,104.5 -6.2,-8.5 -12.9,-14.9 -20.8,-14.8 a 269.5,269.5 0 0 0 -1.8,-37.2 c 5.3,-17.7 -16.7,-42.8 9.9,-52.5 z"
+           data-name="upper_arm_left"
+           id="upper_arm_left-3"
+           transform="translate(-294.4,-245)" />
+      </g>
+    </g>
+    <g
+       _ngcontent-wdm-c15=""
+       data-name="head"
+       id="head-4">
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls neck_left"
+         d="m 336.9,286.6 c 0,0 -1.4,10.7 -1.8,11.5 -0.4,0.8 -16.2,9.4 -16.2,9.4 7.1,3.2 11.8,18 11.8,29.9 0,0 11.7,-0.6 15.5,-1.2 3.8,-0.6 19.2,-5.5 18.7,-6.3 -4.5,-10.6 -8.3,-20.8 -9.3,-28.9 -4.2,-7 -13.6,-14.2 -18.7,-14.4 z"
+         data-name="neck_left"
+         id="neck_left-2"
+         transform="translate(-294.4,-245)" />
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls head_left"
+         d="m 331,247.4 c 41.3,-4.9 42.5,35.4 24.6,53.6 -6.2,-8.3 -11.9,-13.6 -18.7,-14.9 1,-15.1 1.6,-29.9 -5.9,-38.7 z"
+         data-name="head_left"
+         id="head_left-2"
+         transform="translate(-294.4,-245)" />
+      <path
+         _ngcontent-wdm-c15=""
+         class="cls face_left"
+         d="m 330.5,247.7 c -13.5,1 -28.5,4.8 -30.9,25.7 -3.8,32.6 7.3,47.4 35.7,23.9 3.1,-21.8 4.1,-41.2 -4.8,-49.6 z"
+         data-name="face_left"
+         id="face_left-2"
+         transform="translate(-294.4,-245)" />
+    </g>
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Wähle eine Körperstelle *</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
