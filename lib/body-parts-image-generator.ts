@@ -1,7 +1,6 @@
 import { createCanvas, loadImage } from "@napi-rs/canvas"
 import fs from "fs"
 import path from "path"
-import { JSDOM } from "jsdom"
 
 // Body parts mapping
 const BODY_PARTS_MAPPING: Record<string, string> = {
@@ -145,59 +144,55 @@ async function svgToPng(svgContent: string, width: number, height: number): Prom
   }
 }
 
-// Highlight selected parts in SVG
+// Highlight selected parts in SVG.
+//
+// This used to parse the SVG with jsdom and add a `.highlighted` class to each
+// matching element, but jsdom pulls in an ESM-only transitive dependency
+// (@exodus/bytes) that breaks `require()` in the Vercel serverless runtime.
+// Instead we inject a <style> block that targets the relevant ids directly —
+// no DOM parsing, same visual result (sharp already renders CSS in the SVG).
 function highlightSvgParts(svgContent: string, selectedParts: string[]): string {
   try {
-    const dom = new JSDOM(svgContent, { contentType: "image/svg+xml" })
-    const document = dom.window.document
-
     // Reduce each selected part to its base body-part name (strip a trailing -N).
     // A single body part is split across several path ids in the SVGs
     // (e.g. chest_left + chest_left-2) and the same region is named inconsistently
     // between views (front: chest_left-2, left: chest_left-2, right: chest_right),
     // so we match on the base name and highlight the whole id family.
-    const baseNames = new Set(
-      selectedParts
-        .map((part) => (BODY_PARTS_MAPPING[part] || part).replace(/-\d+$/, ""))
-        .filter(Boolean),
-    )
-    console.log(`Highlighting base parts: ${[...baseNames].join(", ")}`)
+    const baseNames = [
+      ...new Set(
+        selectedParts
+          .map((part) => (BODY_PARTS_MAPPING[part] || part).replace(/-\d+$/, ""))
+          .filter(Boolean),
+      ),
+    ]
+    console.log(`Highlighting base parts: ${baseNames.join(", ")}`)
 
-    // Add styles for highlighting
-    const styleContent = `
-      .highlighted {
+    if (baseNames.length === 0) return svgContent
+
+    // For each base name, match the exact id (`chest_left`) and the whole id
+    // family (`chest_left-2`, `chest_left-3`, …) via an attribute-prefix selector.
+    const selector = baseNames
+      .flatMap((base) => [`[id="${base}"]`, `[id^="${base}-"]`])
+      .join(", ")
+
+    const styleBlock = `<style>
+      ${selector} {
         fill: rgba(255, 0, 0, 0.4) !important;
         stroke: #ff0000 !important;
         stroke-width: 2px !important;
       }
-    `
+    </style>`
 
-    // Create or update style element
-    let styleElement = document.querySelector('style')
-    if (!styleElement) {
-      styleElement = document.createElement('style')
-      const svgElement = document.querySelector('svg')
-      if (svgElement) {
-        svgElement.appendChild(styleElement)
-      }
-    }
-    if (styleElement) {
-      styleElement.textContent = styleContent
-    }
+    // Insert the style just before the closing </svg> tag so it lives inside
+    // the SVG root. Fall back to the original content if there's no </svg>.
+    const closingIndex = svgContent.lastIndexOf("</svg>")
+    if (closingIndex === -1) return svgContent
 
-    // Highlight every element whose id belongs to a selected part family.
-    let highlightedCount = 0
-    document.querySelectorAll("[id]").forEach((element) => {
-      const id = element.getAttribute("id") || ""
-      const base = id.replace(/-\d+$/, "")
-      if (baseNames.has(base)) {
-        element.classList.add("highlighted")
-        highlightedCount++
-      }
-    })
-    console.log(`Highlighted ${highlightedCount} element(s)`)
-
-    return document.documentElement.outerHTML
+    return (
+      svgContent.slice(0, closingIndex) +
+      styleBlock +
+      svgContent.slice(closingIndex)
+    )
   } catch (error) {
     console.error("Error highlighting SVG parts:", error)
     return svgContent // Return original if highlighting fails

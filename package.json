@@ -54,7 +54,6 @@
     "immer": "latest",
     "input-otp": "latest",
     "jose": "latest",
-    "jsdom": "latest",
     "kerberos": "latest",
     "lucide-react": "latest",
     "mongodb": "latest",
