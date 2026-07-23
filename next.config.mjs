@@ -6,6 +6,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+
+  // Native .node module (Skia binary) — must not be bundled by webpack;
+  // Next requires it at runtime on the server instead.
+  serverExternalPackages: ['@napi-rs/canvas'],
   images: {
     remotePatterns: [
       {
