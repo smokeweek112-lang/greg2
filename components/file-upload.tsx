@@ -11,6 +11,42 @@ interface FileUploadProps {
   onFileDataUrl?: (dataUrl: string | null) => void
 }
 
+// Cap the longest side and re-encode as JPEG. A raw phone photo can be several
+// MB, which as base64 in the JSON body blows past Vercel's ~4.5 MB request limit
+// (413 Content Too Large). A reference image doesn't need full resolution.
+const MAX_DIMENSION = 1600
+const JPEG_QUALITY = 0.8
+
+function compressImage(file: File): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader()
+    reader.onerror = () => reject(new Error("Failed to read file"))
+    reader.onload = () => {
+      const img = new Image()
+      img.onerror = () => reject(new Error("Failed to load image"))
+      img.onload = () => {
+        let { width, height } = img
+        if (width > MAX_DIMENSION || height > MAX_DIMENSION) {
+          const scale = Math.min(MAX_DIMENSION / width, MAX_DIMENSION / height)
+          width = Math.round(width * scale)
+          height = Math.round(height * scale)
+        }
+
+        const canvas = document.createElement("canvas")
+        canvas.width = width
+        canvas.height = height
+        const ctx = canvas.getContext("2d")
+        if (!ctx) return reject(new Error("Canvas 2D context unavailable"))
+
+        ctx.drawImage(img, 0, 0, width, height)
+        resolve(canvas.toDataURL("image/jpeg", JPEG_QUALITY))
+      }
+      img.src = reader.result as string
+    }
+    reader.readAsDataURL(file)
+  })
+}
+
 export default function FileUpload({ onFileChange, onFileDataUrl }: FileUploadProps) {
   const [preview, setPreview] = useState<string | null>(null)
   const [isDragging, setIsDragging] = useState(false)
@@ -21,24 +57,30 @@ export default function FileUpload({ onFileChange, onFileDataUrl }: FileUploadPr
     handleFile(file)
   }
 
-  const handleFile = (file: File | null) => {
+  const handleFile = async (file: File | null) => {
     onFileChange(file)
 
-    if (file) {
+    if (!file) {
+      setPreview(null)
+      onFileDataUrl?.(null)
+      return
+    }
+
+    try {
+      const dataUrl = await compressImage(file)
+      setPreview(dataUrl)
+      onFileDataUrl?.(dataUrl)
+    } catch (error) {
+      // If compression fails for any reason, fall back to the raw file so the
+      // user can still submit (the server-side flow is unchanged).
+      console.error("Image compression failed, using original:", error)
       const reader = new FileReader()
       reader.onloadend = () => {
         const result = reader.result as string
         setPreview(result)
-        if (onFileDataUrl) {
-          onFileDataUrl(result)
-        }
+        onFileDataUrl?.(result)
       }
       reader.readAsDataURL(file)
-    } else {
-      setPreview(null)
-      if (onFileDataUrl) {
-        onFileDataUrl(null)
-      }
     }
   }
 
