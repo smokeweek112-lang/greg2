@@ -59,7 +59,7 @@
     "lucide-react": "latest",
     "mongodb": "latest",
     "mongodb-client-encryption": "latest",
-    "next": "15.2.4",
+    "next": "15.5.21",
     "next-themes": "latest",
     "qrcode.react": "latest",
     "react": "^19",
